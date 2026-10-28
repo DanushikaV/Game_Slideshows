@@ -142,14 +142,16 @@ fun SlideshowScreen(onBack: () -> Unit = {}) {
         R.drawable.slide1,
         R.drawable.slide2,
         R.drawable.slide3,
-        R.drawable.slide4
+        R.drawable.slide4,
+        R.drawable.slide5
     )
 
     val captions = listOf(
         "genshin impact ♡",
         "wuthering waves ✧",
         "honkai starrail ♡",
-        "infinity nikki ✧"
+        "infinity nikki ✧",
+        "persona 5 royal ♡",
     )
 
     var currentSlide by remember { mutableIntStateOf(0) }
@@ -173,7 +175,7 @@ fun SlideshowScreen(onBack: () -> Unit = {}) {
                 )
             ) {
                 Text(
-                    text = "← Back ♡",
+                    text = "← Back",
                     fontSize = 14.sp,
                     fontFamily = FontFamily.Serif,
                     fontWeight = FontWeight.Medium
